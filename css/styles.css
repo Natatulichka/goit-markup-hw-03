@@ -128,7 +128,8 @@ img {
 }
 .hero-container {
     max-width: 100%;
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     margin: 0;    
 }
  .title {
@@ -166,7 +167,8 @@ img {
 
 /* ======== Advant section ======== */
 .advant-container {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .visually-hidden {
     position: absolute;
@@ -210,7 +212,8 @@ color: #2e2f42;
 background: #f4f4fd;
 }
 .team-container {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-list {
     display: flex;
@@ -261,8 +264,7 @@ background: #f4f4fd;
     color: #2e2f42;    
 }
 .portfolio-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0 120px 0;
 }
 .portfolio-title {
     font-size: 36px;
@@ -328,6 +330,6 @@ background: #f4f4fd;
 }
 .contacts-container {
     display: block;
-    padding: 100px 0;    
+    padding: 100px 0 100px;
 }
 /* ======== Footer ======== */
