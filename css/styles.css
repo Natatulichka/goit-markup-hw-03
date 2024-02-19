@@ -125,10 +125,10 @@ img {
 /*======== Hero section ========*/
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 .hero-container {
-    max-width: 100%;
-    padding: 188px 0;
+    max-width: 100%;    
     margin: 0;    
 }
  .title {
@@ -165,7 +165,7 @@ img {
 /*======== /Hero section ========*/
 
 /* ======== Advant section ======== */
-.advant-container {
+.advant {
     padding: 120px 0;
 }
 .visually-hidden {
@@ -208,10 +208,9 @@ img {
 .team {
 color: #2e2f42;
 background: #f4f4fd;
+padding: 120px 0;
 }
-.team-container {
-    padding: 120px 0;
-}
+
 .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -258,12 +257,11 @@ background: #f4f4fd;
 
 /* ======== Portfolio section ======== */
 .portfolio {
-    color: #2e2f42;    
-}
-.portfolio-container {
+    color: #2e2f42;  
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .portfolio-title {
     font-size: 36px;
     text-align: center;
