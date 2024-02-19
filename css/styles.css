@@ -51,9 +51,12 @@ img {
     align-items: center;   
 }
 .menu {
-    display: flex;
-    column-gap: 40px;   
+    display: flex;   
 }
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .page-header-container{
     display: flex;
     justify-content: space-between;    
@@ -98,11 +101,11 @@ img {
 }
 .address-list {
     display: flex;
-    column-gap: 40px;
 }
-.address-item {
-    display: flex;    
+.address-item:not(:last-child) {
+    margin-right: 40px;
 }
+
 .address-link {
         font-weight: 400;
         font-size: 16px;
@@ -125,8 +128,7 @@ img {
 }
 .hero-container {
     max-width: 100%;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
     margin: 0;    
 }
  .title {
@@ -164,20 +166,19 @@ img {
 
 /* ======== Advant section ======== */
 .advant-container {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    white-space: nowrap;
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .advant-list {
     display: flex;
@@ -209,8 +210,7 @@ color: #2e2f42;
 background: #f4f4fd;
 }
 .team-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
 .team-list {
     display: flex;
@@ -231,6 +231,8 @@ background: #f4f4fd;
 .team-list-item {
    background-color: #fff;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -239,6 +241,7 @@ background: #f4f4fd;
     line-height: 1.2;
     letter-spacing: 0.02em;    
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-dscr {
@@ -249,8 +252,7 @@ background: #f4f4fd;
     text-align: center;
 }
 .team-name-dscr {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding: 32px 0;
 }
 /* ======== /Team section ======== */
 
@@ -259,7 +261,7 @@ background: #f4f4fd;
     color: #2e2f42;    
 }
 .portfolio-container {
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 .portfolio-title {
@@ -273,7 +275,8 @@ background: #f4f4fd;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-list-item {
@@ -284,6 +287,7 @@ background: #f4f4fd;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-dscr {
@@ -293,9 +297,7 @@ background: #f4f4fd;
     color: #434455;
 }
 .portfolio-name-dscr {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 16px;
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -315,14 +317,17 @@ background: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
+.logo {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 16px;
+}
 .contacts-dscr {
-    margin-top: 16px;    
+    margin-top: 16px;
+    max-width: 264px;
 }
 .contacts-container {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-width: 264px;
+    padding: 100px 0;    
 }
 /* ======== Footer ======== */
